@@ -1,0 +1,295 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+header.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3366cc;
+  color: #fff;
+}
+
+.navbar-container .logo img {
+  height: 130px;
+  width: 130px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-list ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main container styles */
+main.main-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.informasi {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.judul h1 {
+  margin: 0;
+  color: #3366cc;
+}
+
+.informasi-deskripsi {
+  margin-top: 20px;
+}
+
+.main-p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-p2 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.position {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.content4,
+.content5,
+.content6,
+.content7 {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.informasi-image,
+.informasi-image1,
+.informasi-image2,
+.informasi-image3 {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.informasi-image img,
+.informasi-image1 img,
+.informasi-image2 img,
+.informasi-image3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.informasi-title,
+.informasi-title1,
+.informasi-title2,
+.informasi-title3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3366cc;
+  margin: 10px;
+}
+
+.informasi-deskripsi1,
+.informasi-deskripsi2,
+.informasi-deskripsi3,
+.informasi-deskripsi4 {
+  font-size: 14px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.button4,
+.button5,
+.button6,
+.button7 {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover {
+  background-color: #27408b;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .bio {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card .img img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card .info ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card .label {
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3366cc;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.footer-container .logo ul,
+.footer-container .footer-list ul,
+.footer-container .footer-list2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container .logo ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .logo ul li img {
+  margin-top: -40px;
+  height: 100px;
+  width: 100px;
+}
+
+.footer-container .footer-note {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.footer-container .footer-list,
+.footer-container .footer-list2 {
+  margin: 10px 0;
+}
+
+.footer-container .footer-list ul,
+.footer-container .footer-list2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-container .footer-list ul {
+  flex-direction: row; /* Display items in a row */
+}
+
+.footer-container .footer-list ul li a,
+.footer-container .footer-list2 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container .footer-list ul li a:hover,
+.footer-container .footer-list2 ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-list ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .logo,
+  .footer-container .footer-list,
+  .footer-container .footer-list2 {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container,
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo ul li img {
+    height: 30px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

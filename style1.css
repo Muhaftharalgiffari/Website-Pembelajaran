@@ -1,0 +1,360 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+header#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3366cc;
+    color: #fff;
+}
+
+#main-header #logo img {
+    height: 130px;
+    width: 130px;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styles */
+div#content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center; /* Center align content */
+}
+
+.informasi {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center; /* Center align content */
+}
+
+.judul h1#Materi {
+    margin: 0;
+    color: #3366cc;
+}
+
+.informasi-deskripsi {
+    margin-top: 20px;
+}
+
+.main-p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#blog-header .img1 img{
+    margin-top: 90px;
+}
+
+/* Author container styles */
+#author-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    vertical-align: top;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: center; /* Center align on smaller screens */
+}
+
+#author-img {
+    max-width: 70px;
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block; /* Ensure inline display */
+}
+
+#author-name {
+    display: block;
+    margin-bottom: 1rem;
+}
+#author-container .slash {
+    display: none;
+}
+
+#author-container a {
+    color: #3c5349;
+    text-decoration: none;
+}
+
+#author-container a:hover {
+    color: #dc6520;
+    text-decoration: underline;
+}
+
+/* Views styles */
+#views {
+    margin-bottom: 3px;
+}
+
+#views img {
+    margin-left: 2px;
+    width: 18px;
+    margin-bottom: -2px;
+}
+
+#views span {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+/* Blog content styles */
+#blog-content {
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    line-height: 1.4;
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center align content */
+    text-align: justify;
+}
+
+#blog-content .img1 img {
+    width: 50%; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center align image */
+    margin-left: 210px;
+}
+
+#blog-content h4.h-style {
+    margin-bottom: 0;
+}
+
+#blog-content ol li p {
+    margin-top: 10px;
+}
+
+#blog-content .sources a {
+    text-decoration: none;
+}
+
+#blog-content .sources a:hover {
+    color: #000000;
+}
+
+/* Button styles */
+.button4,
+.button5,
+.button6,
+.button7 {
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover {
+    background-color: #27408b;
+}
+
+/* Video container styles */
+.video-container {
+    margin: 20px auto; /* Center video container */
+}
+
+.video-container iframe {
+    width: 100%; /* Make video responsive */
+    max-width: 560px; /* Limit maximum width */
+    height: 315px;
+}
+
+/* Footer styles */
+footer.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3366cc;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footer-container .logo ul,
+.footer-container .footer-list ul,
+.footer-container .footer-list2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container .logo ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container .logo ul li img {
+    margin-top: -40px;
+    height: 100px;
+    width: 100px;
+}
+
+.footer-container .footer-note {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.footer-container .footer-list,
+.footer-container .footer-list2 {
+    margin: 10px 0;
+}
+
+.footer-container .footer-list ul,
+.footer-container .footer-list2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-container .footer-list ul {
+    flex-direction: row;
+}
+
+.footer-container .footer-list ul li a,
+.footer-container .footer-list2 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container .footer-list ul li a:hover,
+.footer-container .footer-list2 ul li a:hover {
+    text-decoration: underline;
+}
+/* Responsif untuk layar dengan lebar <= 768px */
+@media (max-width: 768px) {
+    /* Navbar */
+    header#main-header {
+        flex-direction: column; /* Tampilkan elemen secara vertikal */
+        align-items: center; /* Tengahkan elemen-elemen */
+    }
+
+    #main-header #logo img {
+        height: 80px; /* Sesuaikan ukuran logo */
+        width: auto;
+    }
+
+    .nav-list ul {
+        margin-top: 10px; /* Sesuaikan margin top */
+    }
+
+    /* Author container */
+    #author-container {
+        text-align: center; /* Tengahkan konten */
+    }
+
+    #author-img {
+        width: 50px; /* Sesuaikan ukuran gambar penulis */
+        height: 50px;
+    }
+
+    /* Blog content */
+    #blog-content .img1 img {
+        width: 90%; /* Sesuaikan ukuran gambar */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Footer */
+    footer.footer-container {
+        flex-direction: column; /* Tampilkan elemen secara vertikal */
+        align-items: center; /* Tengahkan elemen-elemen */
+        text-align: center; /* Tengahkan teks */
+    }
+
+    .footer-container .logo ul li img {
+        height: 60px; /* Sesuaikan ukuran logo */
+        width: auto;
+    }
+}
+
+/* Responsif untuk layar dengan lebar <= 480px */
+@media (max-width: 480px) {
+    /* Navbar */
+    header#main-header {
+        padding: 10px; /* Sesuaikan padding */
+    }
+
+    #main-header #logo img {
+        height: 60px; /* Sesuaikan ukuran logo */
+    }
+
+    /* Informasi container */
+    .informasi {
+        padding: 10px; /* Sesuaikan padding */
+    }
+
+    /* Blog content */
+    #blog-content .img1 img {
+        width: 100%; /* Sesuaikan ukuran gambar */
+    }
+
+    /* Footer */
+    footer.footer-container {
+        padding: 10px; /* Sesuaikan padding */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
